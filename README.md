@@ -8,3 +8,4 @@
 - [Eye Pointer Animation](https://1908kishan.github.io/everything/EyePointer.html)
 - [Password Chacker](https://1908kishan.github.io/everything/Passwordchacker.html)
 - [Color Changing Boxes](https://1908kishan.github.io/everything/RandomColorChanger.html)
+- [Complete Area Website](https://1908kishan.github.io/everything/Area.html)
