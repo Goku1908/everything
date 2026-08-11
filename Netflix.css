@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/0ce6c17e-e188-4f13-aaf2-6366e12ba739/web/IN-en-20260803-TRIFECTA-perspective_7730cca2-6324-4104-bf66-1a1f6e1a3e61_large.jpg);
+  background-size: cover;
+}
+nav {
+  height: 7vh;
+  width: 100%;
+  background: linear-gradient(to right, #512da8, #8e24aa, #e50914);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+nav h1 {
+  font-size: 1em;
+  color: white;
+  font-weight: bolder;
+}
+nav svg {
+  color: white;
+  margin: 0px 5px;
+}
+#page1 .image {
+  width: 150px;
+  height: 150px;
+}
+#page1 .image img {
+  height: 100%;
+  width: 100%;
+}
+#secondnav {
+  height: auto;
+  width: 100%;
+  padding: 0px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#secondnav #menu {
+  background-color: transparent;
+  border: 3px solid white;
+  height: 40px;
+  width: 130px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+}
+#secondnav #menu option {
+  color: black;
+}
+#secondnav button {
+  height: 30px;
+  width: 80px;
+  background-color: red;
+  color: white;
+  border-radius: 7px;
+  font-size: 1em;
+}
+#center {
+  height: 38vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  margin-top: 50px;
+}
+#center h1 {
+  font-size: 4em;
+  color: white;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+#center h2 {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bolder;
+}
+#center #p1 {
+  font-size: 1em;
+  color: white;
+  font-weight: bolder;
+  margin-top: 7%;
+}
+#in {
+  height: 10vh;
+  width: 50vw;
+  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+input {
+  background-color: white;
+  height: 50px;
+  width: 300px;
+  min-width: 150px;
+  font-size: 1.3em;
+  padding: 5px;
+  border-radius: 8px;
+}
+#b1 {
+  min-height: 50px;
+  width: 300px;
+  min-width: 150px;
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5em;
+  border-radius: 8px;
+  padding: 5px;
+}
+#p2 {
+  color: white;
+  justify-self: center;
+  font-size: 1.2em;
+}
