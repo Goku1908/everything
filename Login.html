@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VERSO — Login & Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-title">
+        <h1>Login &amp; Signup</h1>
+        <h2>Animation</h2>
+      </header>
+
+      <section class="auth-card" id="authCard">
+        <!-- SIGNUP -->
+        <div class="panel form-panel signup-panel">
+          <div class="form-content">
+            <div class="form-heading">
+              <h3>Create account</h3>
+              <span></span>
+            </div>
+
+            <form id="signupForm" novalidate>
+              <label class="field active-field">
+                <span>Full name</span>
+                <div class="input-wrap">
+                  <input type="text" autocomplete="name" required autofocus />
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"
+                    />
+                  </svg>
+                </div>
+              </label>
+
+              <label class="field">
+                <span>Email address</span>
+                <div class="input-wrap">
+                  <input type="email" autocomplete="email" required />
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3 7 9 7 9-7" />
+                  </svg>
+                </div>
+              </label>
+
+              <label class="field password-field">
+                <span>Password</span>
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    id="signupPassword"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                  />
+                  <button
+                    class="icon-button password-toggle"
+                    type="button"
+                    aria-label="Show password"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+                      />
+                      <circle cx="12" cy="12" r="2.5" />
+                    </svg>
+                  </button>
+                </div>
+                <small>Use 8 characters or more.</small>
+              </label>
+
+              <button class="submit-btn" type="submit">Create account</button>
+            </form>
+
+            <p class="switch-copy">
+              Already have an account?
+              <button type="button" class="text-link" data-mode="login">
+                Sign in
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <!-- LOGIN -->
+        <div class="panel form-panel login-panel">
+          <div class="form-content">
+            <div class="form-heading">
+              <h3>Sign in</h3>
+              <span></span>
+            </div>
+
+            <form id="loginForm" novalidate>
+              <label class="field">
+                <span>Username or email</span>
+                <div class="input-wrap">
+                  <input type="text" autocomplete="username" required />
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"
+                    />
+                  </svg>
+                </div>
+              </label>
+
+              <label class="field">
+                <span>Password</span>
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    id="loginPassword"
+                    autocomplete="current-password"
+                    required
+                  />
+                  <button
+                    class="icon-button password-toggle"
+                    type="button"
+                    aria-label="Show password"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"
+                      />
+                      <circle cx="12" cy="12" r="2.5" />
+                    </svg>
+                  </button>
+                </div>
+              </label>
+
+              <div class="login-options">
+                <label class="remember">
+                  <input type="checkbox" />
+                  <span class="fake-check">✓</span>
+                  <span>Keep me signed in</span>
+                </label>
+                <button class="forgot" type="button">Forgot password?</button>
+              </div>
+
+              <button class="submit-btn" type="submit">Sign in</button>
+            </form>
+
+            <p class="switch-copy">
+              New to VERSO?
+              <button type="button" class="text-link" data-mode="signup">
+                Create an account
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <!-- BRAND PANEL -->
+        <div class="brand-panel" aria-hidden="true">
+          <div class="brand-copy signup-copy">
+            <div class="eyebrow">V E R S O</div>
+            <h3>Start the<br /><em>first page.</em></h3>
+            <p>
+              One account for every board, every draft<br />and every device you
+              own.
+            </p>
+          </div>
+
+          <div class="brand-copy login-copy">
+            <div class="eyebrow">V E R S O</div>
+            <h3>Welcome<br /><em>back.</em></h3>
+            <p>
+              Your boards, your drafts and your people<br />are exactly where
+              you left them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="cursor-dot" id="cursorDot"></div>
+    </main>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="Login.js"></script>
+  </body>
+</html>
